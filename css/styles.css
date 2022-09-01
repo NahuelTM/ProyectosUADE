@@ -1,0 +1,81 @@
+#emiliano {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    background-color: rgb(216, 216, 216);
+}
+
+#emiliano h1 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+#emiliano h2 {
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+#emiliano p {
+    font-size: 16px;
+}
+
+#emiliano img {
+    width: 250px;
+    border: 3px solid rgb(121, 121, 121);
+    outline: 2px solid rgb(121, 121, 121);
+    outline-offset: 2px;
+}
+
+
+#edwin {
+    background-color: rgb(64, 109, 143);
+}
+
+#edwin img {
+    width: 127px;
+    height: 200px;
+    padding: 3px;
+    background-color: darkblue;
+}
+
+#edwin h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+#edwin h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#edwin h3 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#edwin h4 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#edwin h5 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#edwin h6 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#edwin p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 300px;
+}

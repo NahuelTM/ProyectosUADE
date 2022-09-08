@@ -12,12 +12,13 @@ nav ul{
 nav li{
     list-style-type: none; ;
 }
+
 nav a{
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+   color: white;
     font-size: 21px;
     padding-top: 5px;
 }
@@ -29,7 +30,33 @@ nav a:hover {
 .divcontenedor {
     border: 1px solid black;
 }
-h1
+
+.logo img{
+height: 75px;
+margin-left: 20px;
+margin-top: 20px;
+
+}
+
+header{
+    background-color: rgb(33, 33, 107);
+}
+
+body{
+margin:0;
+background-color: rgb(241, 241, 229);
+
+}
+
+p{
+margin-left: 10px;
+
+}
+
+h3{
+    margin-left: 10px;
+}
+
 /* integrantes */
 
 
@@ -196,3 +223,5 @@ h1
 #molina {
     background-color: rgb(241, 241, 229);
 }  
+
+/* Logo */

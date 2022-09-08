@@ -1,24 +1,37 @@
 /* Generales */
-.texto_centrado{
+.texto_centrado {
     text-align: center;
 }
+
 nav {
     text-align: center;
 }
-nav ul{
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: auto 50px auto 0px;
+}
+
+nav ul {
     display: flex;
     justify-content: center;
 }
-nav li{
-    list-style-type: none; ;
+
+nav li {
+    list-style-type: none;
+    ;
 }
 
-nav a{
+nav a {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
-   color: white;
+    color: white;
     font-size: 21px;
     padding-top: 5px;
 }
@@ -30,39 +43,51 @@ nav a:hover {
 .divcontenedor {
     border: 1px solid black;
 }
+main{
+    margin: 0 20px;
+}
 
-.logo img{
-height: 75px;
-margin-left: 20px;
-margin-top: 20px;
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(138, 136, 134);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.logo img {
+    height: 75px !important;
+    margin: 15px 30px;
 
 }
 
-header{
+header {
     background-color: rgb(33, 33, 107);
 }
 
-body{
-margin:0;
-background-color: rgb(241, 241, 229);
+body {
+    margin: 0;
+    background-color: rgb(241, 241, 229);
 
 }
 
-p{
-margin-left: 10px;
+p {
+    margin-left: 10px;
 
 }
 
-h3{
+h3 {
     margin-left: 10px;
 }
 
 /* integrantes */
 
 
-.foto{
+.foto {
     height: 100px;
 }
+
 .cajaintegrante {
     background-color: rgb(198, 198, 198);
     width: 300px;
@@ -72,7 +97,8 @@ h3{
     box-shadow: 10px 10px 5px rgb(90 91 91);
     text-align: center;
 }
-#integrantes .contenedorflex{
+
+#integrantes .contenedorflex {
     display: flex;
     justify-content: center;
 }
@@ -150,11 +176,11 @@ h3{
 
 #edwin nav {
     text-align: center;
-} 
+}
 
 
 /* Nahuel */
- 
+
 #nahuel img {
     height: 200px;
     margin-bottom: 30px;
@@ -186,7 +212,7 @@ h3{
     margin-bottom: 3px;
     margin-left: 7px;
     margin-right: 3px;
-} 
+}
 
 
 /* Molina */
@@ -222,6 +248,6 @@ h3{
 
 #molina {
     background-color: rgb(241, 241, 229);
-}  
+}
 
 /* Logo */

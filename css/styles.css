@@ -2,18 +2,22 @@
 .texto_centrado {
     text-align: center;
 }
-body{
+
+body {
     background-image: url(../img/hoja.jpg);
     margin: 0;
-/*     background-color: rgb(241, 241, 229); */
+    /*     background-color: rgb(241, 241, 229); */
 
 }
+
 nav {
     text-align: center;
 }
-header input{
+
+header input {
     display: none;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -54,7 +58,8 @@ nav a:hover {
 .divcontenedor {
     border: 1px solid black;
 }
-main{
+
+main {
     margin: 0 20px;
 }
 
@@ -63,11 +68,13 @@ footer {
     background-color: rgb(138, 136, 134);
     text-align: center;
     padding: 20px;
-    
+
 }
-.logo a{
+
+.logo a {
     padding-left: 250px;
 }
+
 .logo {
     margin: 15px 30px;
     width: 220px;
@@ -112,6 +119,9 @@ h3 {
     justify-content: center;
 }
 
+.menu-total {
+    margin: auto 0;
+}
 
 /* Emiliano */
 
@@ -261,10 +271,22 @@ h3 {
 
 /* Logo */
 
-@media screen and (max-width: 500px){
-    .logo a{
+@media screen and (max-width: 500px) {
+    #emiliano p {
+        height: auto;
+    }
+    .divcontenedor {
+        margin-bottom: 10px;
+    }
+    #integrantes .contenedorflex {
+        display: block;
+        justify-content: center;
+    }
+
+    .logo a {
         padding-left: 70px;
     }
+
     .logo {
         margin: 14px;
         width: 70px;
@@ -272,16 +294,17 @@ h3 {
         background-repeat: no-repeat;
         height: 70px;
         background-image: url(../img/logo-mobile.jpg);
-    
+
     }
-    header input{
-        display:block;
+
+    header input {
+        display: block;
     }
-    
-    
-    .toggler{
-      /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
-        z-index:2;
+
+
+    .toggler {
+        /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+        z-index: 2;
         height: 50px;
         width: 50px;
         position: absolute;
@@ -290,8 +313,8 @@ h3 {
         cursor: pointer;
         opacity: 0;
     }
-    
-    .hamburger{
+
+    .hamburger {
         position: absolute;
         top: 20px;
         right: 0;
@@ -299,67 +322,68 @@ h3 {
         width: 40px;
         padding: 0.6rem;
         z-index: 1;
-      
-      /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
-      
+
+        /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
-    
-    .hamburger > div{
+
+    .hamburger>div {
         position: relative;
         top: 0;
         left: 0;
         background: white;
         height: 2px;
         width: 60%;
-        transition: all  0.4s ease;
+        transition: all 0.4s ease;
     }
-    
+
     /* CREATING THE TOP AND BOTTOM LINES : 
     TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
-    
-    .hamburger > div::before,
-    .hamburger > div::after{
+
+    .hamburger>div::before,
+    .hamburger>div::after {
         content: '';
         position: absolute;
         top: -10px;
         background: white;
         width: 100%;
         height: 2px;
-        transition: all  0.4s ease;
+        transition: all 0.4s ease;
     }
-    
-    .hamburger > div::after{
+
+    .hamburger>div::after {
         top: 10px;
     }
-    
+
     /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
-    
-    .toggler:checked + .hamburger > div{
-        background: rgba(0,0,0,0);
+
+    .toggler:checked+.hamburger>div {
+        background: rgba(0, 0, 0, 0);
     }
-    .toggler:checked + .hamburger > div::before{
+
+    .toggler:checked+.hamburger>div::before {
         top: 0;
         transform: rotate(45deg);
         background: black;
     }
-    
+
     /* AND ROTATING THE TOP AND BOTTOM LINES :  */
-    
-    .toggler:checked + .hamburger > div::after{
+
+    .toggler:checked+.hamburger>div::after {
         top: 0;
         transform: rotate(135deg);
         background: black;
     }
-    
-    
+
+
     /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
-    
-    .menu{
+
+    .menu {
         background: white;
 
         height: 100px;
@@ -370,20 +394,20 @@ h3 {
 
         transition: 0.4s;
     }
-    
+
     /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
-    
-    .toggler:checked ~ .menu{
+
+    .toggler:checked~.menu {
         transform: translateY(0px);
         transform: translateX(0px);
         height: 300px;
 
     }
-    
-    
+
+
     /* STYLING THE LIST :  */
-    
-    .menu >  div > ul{
+
+    .menu>div>ul {
         display: block;
         top: 70px;
         color: hwb(0 100% 0%);
@@ -391,30 +415,30 @@ h3 {
         margin: 0;
         padding-top: 75px;
         text-align: right;
-      /* HIDDEN INITIALLY  :  */
-      
+        /* HIDDEN INITIALLY  :  */
+
         visibility: hidden;
     }
-    
-    .menu > div > ul > li{
+
+    .menu>div>ul>li {
         list-style: none;
         padding: 0.5rem;
     }
-    
-    .menu > div > ul > li > a{
+
+    .menu>div>ul>li>a {
         color: black;
         text-decoration: none;
         font-size: 20px;
     }
-    
+
     /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
-    
-    .toggler:checked ~ .menu > div > ul{
+
+    .toggler:checked~.menu>div>ul {
         transition: visibility 0.4s ease;
         visibility: visible;
     }
-    
-    .toggler:checked ~ .menu > div > ul > li > a:hover{
+
+    .toggler:checked~.menu>div>ul>li>a:hover {
         color: orange;
     }
 

@@ -1,6 +1,13 @@
+*{
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
 /* Generales */
 .texto_centrado {
     text-align: center;
+    
 }
 
 body {
@@ -63,11 +70,22 @@ main {
     margin: 0 20px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
 footer {
     height: 50px;
     background-color: rgb(138, 136, 134);
     text-align: center;
     padding: 20px;
+    margin-top: 180px;
 
 }
 
@@ -90,13 +108,31 @@ footer {
 
 p {
     margin-left: 10px;
+    font-size: 27px;
 
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
 }
 
 h3 {
     margin-left: 10px;
+    font-size: 35px;
+    text-decoration: underline;
 }
 
+h2 {
+    margin-left: 10px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.texto{
+    padding: 10px;
+    border: 1px solid black;
+}
 /* integrantes */
 
 
